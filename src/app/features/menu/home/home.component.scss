@@ -1,4 +1,6 @@
-section {
+@import '../../../core/style/core.style.scss';
+
+.section {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -6,32 +8,37 @@ section {
     align-content: center;
     justify-content: center;
     align-items: center;
-
+    gap: 1.25rem;
     // @media screen and (max-width: 600px) {
     //     width: 400px;
     // }
-    .title{
-        color: var(--valencia-color);
-        padding-bottom: 100px;
-        font-size: 36px;
+    &_title{
+        padding-bottom: 6.25rem;
+        font-size: 3.75rem;
     }
-    .option {
-        border: 5px solid var(--scooter-color);
-        border-radius: 45px;
-        height: 88px;
-        width: 328px;
+    &_option {
+        border: 0.3125rem solid var(--scooter-color);
+        border-radius: 2.8125rem;
+        height: 5.5rem;
+        width: 20.0rem;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
 
-        .label {
-            color: var(--azure-color);
+        &_label {
+            font-size: 2rem;
         }
 
-        img {
-            height: 75px;
-            width: 75px;
+        &_img {
+            height: 4.6875rem;
+            width: 4.6875rem;
         }
+    }
+    &_actions{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 1.25rem;
     }
 }

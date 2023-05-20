@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
 :root{
 	--haiti-color: #18081E;
     --scooter-color: #2DBCB7;
     --azure-color: #0E3B51;
     --valencia-color: #D5404D;
     background-color: var(--haiti-color);
+    font-family: 'Bungee', fantasy;
 }
 
 ::-webkit-scrollbar {

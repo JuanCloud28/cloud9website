@@ -1,0 +1,261 @@
+
+.button{
+    background-color: var(--haiti-color);
+    border: 0.3125rem solid var(--azure-color);
+    border-radius: 2.8125rem;
+    height: 5.5rem;
+    width: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &_label {
+        font-family: 'Bungee', fantasy;
+        font-size: 1rem;
+    }
+
+    &_img {
+        height: 2.1875rem;
+        width: 2.1875rem;
+    }
+
+}
+
+.button-main{
+
+}
+
+.button-navigation{
+
+}
+
+.button-seccondary{
+
+}
+
+@mixin font-led-color($color){
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px $color,
+    0 0 82px $color,
+    0 0 92px $color,
+    0 0 102px $color,
+    0 0 151px $color;
+}
+.cloud9-font-azure{    
+    color: var(--azure-color);
+    @include font-led-color(var(--azure-color))
+}
+
+.cloud9-font-valencia{   
+    color: var(--valencia-color); 
+    @include font-led-color(var(--valencia-color))
+}
+
+.cloud9-font-scooter{    
+    color: var(--scooter-color);
+    @include font-led-color(var(--scooter-color))
+}
+
+.pulsate-valencia {
+    animation: pulsate-valencia 1.5s infinite alternate;     
+}
+
+.pulsate-azure {
+    animation: pulsate-azure 1.5s infinite alternate;     
+}
+
+.pulsate-scooter {
+    animation: pulsate-scooter 1.5s infinite alternate;     
+}
+
+.pulsate-box-scooter {
+    animation: pulsate-box-scooter 1.5s infinite alternate;     
+}
+
+.pulsate-box-azure {
+    animation: pulsate-box-azure 1.5s infinite alternate;     
+}
+
+@keyframes pulsate-valencia {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--valencia-color),
+        0 0 80px var(--valencia-color),
+        0 0 90px var(--valencia-color),
+        0 0 100px var(--valencia-color),
+        0 0 150px var(--valencia-color);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--valencia-color),
+      0 0 45px var(--valencia-color),
+      0 0 55px var(--valencia-color),
+      0 0 70px var(--valencia-color),
+      0 0 80px var(--valencia-color);
+  
+  }
+}
+
+@keyframes pulsate-valencia {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--valencia-color),
+        0 0 80px var(--valencia-color),
+        0 0 90px var(--valencia-color),
+        0 0 100px var(--valencia-color),
+        0 0 150px var(--valencia-color);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--valencia-color),
+      0 0 45px var(--valencia-color),
+      0 0 55px var(--valencia-color),
+      0 0 70px var(--valencia-color),
+      0 0 80px var(--valencia-color);
+  
+  }
+}
+
+@keyframes pulsate-scooter {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--scooter-color),
+        0 0 80px var(--scooter-color),
+        0 0 90px var(--scooter-color),
+        0 0 100px var(--scooter-color),
+        0 0 150px var(--scooter-color);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--scooter-color),
+      0 0 45px var(--scooter-color),
+      0 0 55px var(--scooter-color),
+      0 0 70px var(--scooter-color),
+      0 0 80px var(--scooter-color);
+  
+  }
+}
+
+@keyframes pulsate-azure {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--azure-color),
+        0 0 80px var(--azure-color),
+        0 0 90px var(--azure-color),
+        0 0 100px var(--azure-color),
+        0 0 150px var(--azure-color);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--azure-color),
+      0 0 45px var(--azure-color),
+      0 0 55px var(--azure-color),
+      0 0 70px var(--azure-color),
+      0 0 80px var(--azure-color);
+  
+  }
+}
+  
+
+@keyframes pulsate-box-scooter {
+    
+    100% {
+  
+        box-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--scooter-color);
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--scooter-color),
+      0 0 25px var(--scooter-color);
+  
+  }
+}
+
+@keyframes pulsate-box-azure {
+    
+    100% {
+  
+        box-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--azure-color),
+        0 0 80px var(--azure-color),
+        0 0 90px var(--azure-color),
+        0 0 100px var(--azure-color),
+        0 0 150px var(--azure-color);
+    
+    }
+    
+    0% {
+  
+      box-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--azure-color),
+      0 0 45px var(--azure-color),
+      0 0 55px var(--azure-color),
+      0 0 70px var(--azure-color),
+      0 0 80px var(--azure-color);
+  
+  }
+}
