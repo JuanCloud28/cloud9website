@@ -15,6 +15,7 @@
     &_title{
         padding-bottom: 6.25rem;
         font-size: 3.75rem;
+        text-align: center;
     }
     &_option {
         border: 0.3125rem solid var(--scooter-color);
@@ -25,6 +26,10 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+
+        @media screen and (max-width: 350px) {
+            width: 300px;
+        }
 
         &_label {
             font-size: 2rem;
