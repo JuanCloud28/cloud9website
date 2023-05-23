@@ -8,7 +8,8 @@ import { WafflesComponent } from './waffles/waffles.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent }
+  { path: '', component: HomeComponent },
+  { path: 'shisha', component: ShishaComponent}
 ];
 
 @NgModule({
@@ -24,7 +25,8 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   exports:[
-    HomeComponent
+    HomeComponent,
+    ShishaComponent
   ]
 })
 export class MenuModule { }

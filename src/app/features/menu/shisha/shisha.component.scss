@@ -1,0 +1,72 @@
+@import '../../../core/style/core.style.scss';
+
+.container{
+    width: 100%;
+    height: 100vh;
+    &_section{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        &_brand{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            width: 100%;
+            img{
+               height: 95px;
+               width: 158px;
+            }
+        }
+        &_head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            &_option{
+                color: #fff;
+                width: 45%;
+                text-align: center;
+                border: 0.3125rem solid var(--scooter-color);
+                border-radius: 2.8125rem;
+            }
+        }
+        &_flavours{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: space-around;
+            height: 80%;
+            padding: 16px 0;
+            &_option{
+                border: 0.3125rem solid var(--valencia-color);
+                border-radius: 2.8125rem;    
+                height: 2.5rem;   
+                width: 6.25rem;
+                display: flex;
+                align-content: flex-start;
+                justify-content: center;
+                align-items: center;   
+                p{
+                    text-align: center;
+                }      
+            }
+        }
+    }
+    &_actions{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        align-self: flex-end;
+        bottom: 1rem;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        button{
+            height: 3rem;
+            width: 7rem;
+        }
+    }
+}
