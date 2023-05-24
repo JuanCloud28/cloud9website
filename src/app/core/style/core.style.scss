@@ -62,25 +62,49 @@
     @include font-led-color(var(--scooter-color))
 }
 
-.pulsate-valencia {
-    animation: pulsate-valencia 1.5s infinite alternate;     
+.box-scooter{
+    box-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px var(--scooter-color);
 }
 
-.pulsate-azure {
-    animation: pulsate-azure 1.5s infinite alternate;     
+.box-azure{
+    box-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px var(--azure-color);
 }
 
-.pulsate-scooter {
-    animation: pulsate-scooter 1.5s infinite alternate;     
+.box-valencia{
+    box-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px var(--valencia-color);
 }
 
-.pulsate-box-scooter {
-    animation: pulsate-box-scooter 1.5s infinite alternate;     
-}
+// .pulsate-valencia {
+//     animation: pulsate-valencia 1.5s infinite alternate;     
+// }
 
-.pulsate-box-azure {
-    animation: pulsate-box-azure 1.5s infinite alternate;     
-}
+// .pulsate-azure {
+//     animation: pulsate-azure 1.5s infinite alternate;     
+// }
+
+// .pulsate-scooter {
+//     animation: pulsate-scooter 1.5s infinite alternate;     
+// }
+
+// .pulsate-box-scooter {
+//     animation: pulsate-box-scooter 1.5s infinite alternate;     
+// }
+
+// .pulsate-box-azure {
+//     animation: pulsate-box-azure 1.5s infinite alternate;     
+// }
 
 @keyframes pulsate-valencia {
     

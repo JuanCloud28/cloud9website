@@ -2,7 +2,7 @@
     {
         "id": "brandAF",
         "name": "al fakher",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "logo": "assets/brands/brand-AF-vector.png",
         "head": [
             {
                 "name": "clay head",
@@ -29,7 +29,7 @@
     {
         "id": "brandAY",
         "name": "aladlya",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "logo": "assets/brands/brand-AY-vector.png",
         "head": [
             {
                 "name": "clay head",
@@ -62,7 +62,7 @@
     {
         "id": "brandAZ",
         "name": "azure",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "logo": "assets/brands/brand-AZ-vector.png",
         "head": [
             {
                 "name": "clay head",
@@ -99,7 +99,7 @@
     {
         "id": "brandET",
         "name": "eternal smoke",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "logo": "assets/brands/brand-ET-vector.png",
         "head": [
             {
                 "name": "clay head",
@@ -122,7 +122,7 @@
     {
         "id": "brandDS",
         "name": "dark side",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "logo": "assets/brands/brand-DS-vector.png",
         "head": [
             {
                 "name": "clay head",
@@ -154,12 +154,12 @@
     },
     {
         "id": "brandMH",
-        "name": "must have",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "name": "musthave",
+        "logo": "assets/brands/brand-MH-vector.png",
         "head": [
             {
                 "name": "clay head",
-                "price": "32"
+                "price": "65"
             }
         ],
         "flavours": [
@@ -184,7 +184,7 @@
     {
         "id": "brandTG",
         "name": "tangiers",
-        "logo": "src/assets/brands/brand-AF-vector.png",
+        "logo": "assets/brands/brand-TG-vector.png",
         "head": [
             {
                 "name": "clay head",

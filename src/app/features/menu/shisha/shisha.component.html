@@ -1,28 +1,28 @@
 <div class="container">
     <section class="container_section" *ngFor="let section of flavourArray" id="{{section.id}}">
         <div class="container_section_brand">
-            <img src="../../../../assets/brands/brand-AF-vector.png" alt="Al Fakher">
+            <img [src]="section.logo" alt="Al Fakher">
         </div>
         <div class="container_section_head">
-            <div *ngFor="let head of section.head" class="container_section_head_option  pulsate-box-scooter">
+            <div *ngFor="let head of section.head" class="container_section_head_option box-scooter">
                 <p>{{head.name | uppercase}}</p>
                 <P>{{head.price | currency}}</P>
             </div>
         </div>
         <div class="container_section_flavours">
-            <div *ngFor="let flavour of section.flavours" class="container_section_flavours_option">
+            <div *ngFor="let flavour of section.flavours" class="container_section_flavours_option box-valencia">
                 <p class="cloud9-font-valencia">{{flavour | uppercase}}</p>
             </div>
         </div>
     </section>
     <div class="container_actions">
-        <button id="coal-service" class="button button-azure pulsate-box-azure" (click)="up()">
+        <button id="coal-service" class="button button-azure box-azure" (click)="up()">
             <div class="button_label cloud9-font-azure pulsate-azure">up</div>
         </button>
-        <button id="coal-service" class="button button-azure pulsate-box-azure" (click)="home()">
+        <button id="coal-service" class="button button-azure box-azure" (click)="home()">
             <div class="button_label cloud9-font-azure pulsate-azure">HOME</div>
         </button>
-        <button id="coal-service" class="button button-azure pulsate-box-azure" (click)="down()">
+        <button id="coal-service" class="button button-azure box-azure" (click)="down()">
             <div class="button_label cloud9-font-azure pulsate-azure">down</div>
         </button>
     </div>
