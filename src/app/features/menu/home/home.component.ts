@@ -15,5 +15,9 @@ export class HomeComponent {
   shishaOption(){
     this.router.navigate(['/shisha']);
   }
+
+  coffeeOption(){
+    this.router.navigate(['/coffee']);
+  }
   
 }

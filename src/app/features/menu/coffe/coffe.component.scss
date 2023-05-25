@@ -1,0 +1,73 @@
+@import '../../../core/style/core.style.scss';
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    &_section_coffee {
+        height: 90vh;
+
+        &_columns {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            justify-items: center;
+            align-items: center;
+            height: 90%;
+
+            &_options {
+                display: grid;
+                gap: 0.9375rem;
+                justify-items: center;
+            }
+
+            &_img {}
+        }
+
+        &_iced {
+            height: 10%;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+    }
+
+    &_section_tea {
+        height: 100vh;
+
+        &_columns {
+            display: flex;
+            grid-template-columns: 40% 60%;
+            justify-items: center;
+            align-items: center;
+            height: 80%;
+
+            &_options {
+                display: grid;
+                gap: 0.9375rem;
+                justify-items: center;
+            }
+
+            &_img {}
+        }
+
+        &_pot {
+            text-align: center;
+            font-size: 2rem;
+            height: 10%;
+        }
+    }
+
+    &_actions{
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        align-self: flex-end;
+        bottom: 0.625rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        button{
+            height: 3rem;
+            width: 7rem;
+        }
+    }
+}
