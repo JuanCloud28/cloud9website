@@ -19,5 +19,12 @@ export class HomeComponent {
   coffeeOption(){
     this.router.navigate(['/coffee']);
   }
+
+  drinkOption(){
+    this.router.navigate(['/drink-options']);
+  }
   
+  waffleOption(){
+    this.router.navigate(['/waffles']);
+  }
 }
