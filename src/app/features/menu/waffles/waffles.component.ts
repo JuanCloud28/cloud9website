@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-waffles',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class WafflesComponent {
 
+  constructor(private router: Router){
+    
+  }
+
+  home(){
+    this.router.navigate(['/']);
+   }
 }
