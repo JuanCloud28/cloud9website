@@ -1,6 +1,6 @@
 @import '../../../core/style/core.style.scss';
 
-.container{
+.container {
 
     width: 100%;
     height: 100vh;
@@ -11,49 +11,76 @@
         display: grid;
         grid-template-rows: 25% 30% 10% 20% 10%;
         gap: 0.625rem;
-        & .waffle_img{
+
+        & .waffle_img {
             width: 100%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            img{
+
+            img {
                 width: 9.375rem;
                 height: 9.375rem;
             }
         }
-        & .waffle_options{
+
+        & .waffle_options {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             gap: 0.625rem;
-            &_item{
+
+            &_item {
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
                 flex-direction: row;
+                gap: 0.625rem;
+
+                &_description,
+                &_title {
+                    text-align: center;
+                }
             }
         }
-        & .waffle_extras{
-            &_seeds{
+
+        & .waffle_extras {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_seeds {
+                width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 align-items: center;
-                img{
+
+                img {
                     width: 100px;
                     height: 80px;
                 }
             }
         }
-        & .waffle_price{
+
+        & .waffle_price {
+            display: flex;
             font-size: 2rem;
-            text-align: center;        
+            text-align: center;
+            justify-content: center;
+            align-items: center;
         }
 
-        & .waffle_actions{
+        & .waffle_actions {
             display: flex;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
+
+            button {
+                height: 3rem;
+                width: 7rem;
+            }
         }
     }
 }
