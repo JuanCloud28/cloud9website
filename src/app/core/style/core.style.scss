@@ -57,8 +57,8 @@
 
 @mixin font-led-text-color($color){
     text-shadow:
-    0 0 10px #eeeeee,
-    0 0 82px $color,
+    0 0 12px #ffffff86,
+    0 0 42px $color
 }
 .cloud9-font-azure{    
     color: var(--azure-color);
@@ -107,11 +107,13 @@
 }
 
 .box-valencia{
+    background-color: #000000;
     box-shadow:
     0 0 4px #fff,
     0 0 11px #fff,
     0 0 19px #fff,
     0 0 40px var(--valencia-color);
+
 }
 
 // .pulsate-valencia {
