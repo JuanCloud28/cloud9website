@@ -1,1 +1,16 @@
-<p>tablemap works!</p>
+<div class="container">
+    <div class="container_map">
+        <div class="container_map">
+            <div class="outsite"></div>
+            <div class="outsite-tent"></div>
+            <div class="main-tent"></div>
+        </div>
+        <div class="container_map_log">
+            <ul>
+                <li *ngFor="let message of messages" style="color: white;">
+                    Id: {{ message.id }}, Table: {{message.tableId}}, Date: {{date.toString()}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

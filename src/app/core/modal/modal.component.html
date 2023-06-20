@@ -1,1 +1,8 @@
-<p>modal works!</p>
+<h1 mat-dialog-title>Assistance required</h1>
+<div mat-dialog-content>
+    <p *ngIf="data.id =='101'">Coals Service Assistance required on table {{data.tableId}}</p>
+    <p *ngIf="data.id =='102'">Staff Assistance required on table {{data.tableId}}</p>
+</div>
+<div mat-dialog-actions>
+    <button [mat-dialog-close]="data.animal" cdkFocusInitial>Got it</button>
+</div>
