@@ -1,0 +1,139 @@
+@import '../../../core/style/core.style.scss';
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 70% 25%;
+    justify-items: center;
+    align-content: center;
+
+    &_map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "Outsite Outsite-tent"
+            "main-tent main-tent";
+        width: 100%;
+        height: 100%;
+
+        &_outsite {
+            grid-area: Outsite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                text-align: center;
+                font-size: 3rem;
+                font-weight: 800;
+            }
+        }
+
+        &_outsite-tent {
+            grid-area: Outsite-tent;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px 5px;
+            grid-template-areas:
+                "table-12 table-13 table-14"
+                "table-11 entry table-15";
+
+            &_table-11 {
+                grid-area: table-11;
+            }
+
+            &_table-12 {
+                grid-area: table-12;
+            }
+
+            &_table-13 {
+                grid-area: table-13;
+            }
+
+            &_table-14 {
+                grid-area: table-14;
+            }
+
+            &_table-15 {
+                grid-area: table-15;
+            }
+
+            &_entry {
+                grid-area: entry;
+            }
+        }
+
+        &_main-tent {
+            grid-area: main-tent;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 5px 5px;
+            grid-template-areas:
+                "table-4 table-5 table-6 entry table-7 table-8"
+                "table-3 table-2 table-1 counter table-10 table-9";
+
+            &_table-3 {
+                grid-area: table-3;
+            }
+
+            &_table-1 {
+                grid-area: table-1;
+            }
+
+            &_table-2 {
+                grid-area: table-2;
+            }
+
+            &_counter {
+                grid-area: counter;
+            }
+
+            &_entry {
+                grid-area: entry;
+            }
+
+            &_table-4 {
+                grid-area: table-4;
+            }
+
+            &_table-5 {
+                grid-area: table-5;
+            }
+
+            &_table-6 {
+                grid-area: table-6;
+            }
+
+            &_table-7 {
+                grid-area: table-7;
+            }
+
+            &_table-8 {
+                grid-area: table-8;
+            }
+
+            &_table-9 {
+                grid-area: table-9;
+            }
+
+            &_table-10 {
+                grid-area: table-10;
+            }
+        }
+
+    }
+
+    &_log {
+        height: 100%;
+        ul{
+            width: 350px;
+            overflow: auto;
+            height: 80%;
+        }
+    }
+}

@@ -1,16 +1,72 @@
 <div class="container">
-    <div class="container_map">
-        <div class="container_map">
-            <div class="outsite"></div>
-            <div class="outsite-tent"></div>
-            <div class="main-tent"></div>
+    <div class="container_map box-scooter">
+        <div class="container_map_outsite">
+            <p class="cloud9-font-valencia">Cloud 9 TableMap</p>
         </div>
-        <div class="container_map_log">
-            <ul>
-                <li *ngFor="let message of messages" style="color: white;">
-                    Id: {{ message.id }}, Table: {{message.tableId}}, Date: {{date.toString()}}
-                </li>
-            </ul>
+        <div class="container_map_outsite-tent">
+            <div class="container_map_outsite-tent_table-11" id="table-11">
+                <p class="table-title">TABLE 11</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_outsite-tent_table-12" id="table-12">
+                <p class="table-title">TABLE 12</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_outsite-tent_table-13" id="table-13">
+                <p class="table-title">TABLE 13</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_outsite-tent_table-14" id="table-14">
+                <p class="table-title">TABLE 14</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_outsite-tent_table-15" id="table-15">
+                <p class="table-title">TABLE 15</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
         </div>
+        <div class="container_map_main-tent">
+            <div class="container_map_main-tent_table-1" id="table-1">
+                <p class="table-title">TABLE 1</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-2" id="table-2">
+                <p class="table-title">TABLE 2</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-3" id="table-3">
+                <p class="table-title">TABLE 3</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-4" id="table-4">
+                <p class="table-title">TABLE 4</p>
+                <img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-5" id="table-5">
+                <p class="table-title">TABLE 5</p><img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-6" id="table-6">
+                <p class="table-title">TABLE 6</p><img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-7" id="table-7">
+                <p class="table-title">TABLE 7</p><img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-8" id="table-8">
+                <p class="table-title">TABLE 8</p><img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-9" id="table-9">
+                <p class="table-title">TABLE 9</p><img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+            <div class="container_map_main-tent_table-10" id="table-10">
+                <p class="table-title">TABLE 10</p><img src="../../../../assets/dinner-table.png" class="table-icon" alt="shisha table">
+            </div>
+        </div>
+    </div>
+    <div class="container_log">
+        <ul>
+            <li *ngFor="let message of messages" style="color: white;">
+                Id: {{ message.id }}, Table: {{message.tableId}}, Date: {{message.date | date: 'dd/M/yyyy HH:mm:ss'}}
+            </li>
+        </ul>
     </div>
 </div>

@@ -6,4 +6,8 @@ import { Injectable } from '@angular/core';
 export class AssistanceService {
 
   constructor() { }
+
+  assistance(sseUrl: string) {
+    
+  }
 }

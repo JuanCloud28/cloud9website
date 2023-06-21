@@ -13,15 +13,17 @@ export class TablemapComponent implements OnInit, OnDestroy {
 
   private sseStream: Subscription;
   messages: Array<any> = [];
-  date = new Date();
 
   constructor(private sseService: SseService, public dialog: MatDialog) {
 
     this.sseStream = this.sseService.observeMessages('https://cloud9-assistance.onrender.com/assistance/sse')
       .subscribe(message => {
+        let logObject = JSON.parse(message);
+        logObject.date = new Date();
         this.playAudio();
-        this.openDialog(JSON.parse(message));
-        this.messages.push(JSON.parse(message));
+        this.openDialog(logObject);
+        this.wichTable(logObject.tableId)
+        this.messages.push(logObject);
       });
   }
 
@@ -40,6 +42,18 @@ export class TablemapComponent implements OnInit, OnDestroy {
     this.dialog.open(ModalComponent, {
       data: {id: data.id, tableId: data.tableId},
     });
+  }
+
+  wichTable(id: string){
+    let table = document.getElementById(`table-${id}`);
+    if(table){
+      table.style.backgroundColor = "#52bbbb"
+      setTimeout(() => {
+        if(table)
+        table.style.backgroundColor = "#18081E"
+      }, 30000);
+    }
+    
   }
 
 
