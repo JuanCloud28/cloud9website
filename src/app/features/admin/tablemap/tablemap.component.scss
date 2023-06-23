@@ -1,5 +1,12 @@
 @import '../../../core/style/core.style.scss';
 
+@mixin center-icon-tables {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .container {
     height: 100vh;
     width: 100%;
@@ -44,22 +51,27 @@
 
             &_table-11 {
                 grid-area: table-11;
+                @include center-icon-tables;
             }
 
             &_table-12 {
                 grid-area: table-12;
+                @include center-icon-tables;
             }
 
             &_table-13 {
                 grid-area: table-13;
+                @include center-icon-tables;
             }
 
             &_table-14 {
                 grid-area: table-14;
+                @include center-icon-tables;
             }
 
             &_table-15 {
                 grid-area: table-15;
+                @include center-icon-tables;
             }
 
             &_entry {
@@ -79,14 +91,17 @@
 
             &_table-3 {
                 grid-area: table-3;
+                @include center-icon-tables;
             }
 
             &_table-1 {
                 grid-area: table-1;
+                @include center-icon-tables;
             }
 
             &_table-2 {
                 grid-area: table-2;
+                @include center-icon-tables;
             }
 
             &_counter {
@@ -99,30 +114,37 @@
 
             &_table-4 {
                 grid-area: table-4;
+                @include center-icon-tables;
             }
 
             &_table-5 {
                 grid-area: table-5;
+                @include center-icon-tables;
             }
 
             &_table-6 {
                 grid-area: table-6;
+                @include center-icon-tables;
             }
 
             &_table-7 {
                 grid-area: table-7;
+                @include center-icon-tables;
             }
 
             &_table-8 {
                 grid-area: table-8;
+                @include center-icon-tables;
             }
 
             &_table-9 {
                 grid-area: table-9;
+                @include center-icon-tables;
             }
 
             &_table-10 {
                 grid-area: table-10;
+                @include center-icon-tables;
             }
         }
 
@@ -130,7 +152,8 @@
 
     &_log {
         height: 100%;
-        ul{
+
+        ul {
             width: 350px;
             overflow: auto;
             height: 80%;
